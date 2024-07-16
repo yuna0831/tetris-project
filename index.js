@@ -6,7 +6,7 @@ const bgm = document.createElement('audio');
 const breakSound = document.createElement('audio');
 const drop = document.createElement('audio');
 let rotatedShape;
-
+let isPaused = false;
 
 bgm.setAttribute('src', './asserts/Tetris.mp3');
 bgm.muted = true;
@@ -142,6 +142,8 @@ function drawTetromino() {
         }
       }
     }
+
+
   }
 
 // erase tetromino from board
@@ -261,11 +263,9 @@ function gameOver() {
     clearInterval(gameInterval); // Stop the game loop
     alert("Game Over!"); // Display game over message
     // Optionally reset the game state or provide options to restart
+    
 }
 
-
-
-    gameInterval = setInterval(() => moveTetromino('down'), 700);
 
 
 
@@ -391,24 +391,13 @@ drawTetromino();
 
 
 
-
-
-
- 
-
-
-
-
-
-
-
     
 
 
 
 // draw Ghost
 function drawGhostTetromino(){
-    return;
+
     const shape = currentGhostTetromino.shape;
     const color = 'rgba(255,255,255,0.5)';
     const row = currentGhostTetromino.row;
@@ -470,13 +459,7 @@ function moveGhostTetromino(){
 
 }
 
-/*document.body.addEventListener('click', () =>{
-    bgm.play();
-    bgm.muted = false;
-    drop.muted = false;
-   
-});
-*/
+
 
 
 const soundButton = document.querySelector('button');
@@ -511,6 +494,9 @@ document.addEventListener('keydown', handleKeyPress);
 
 
 function handleKeyPress(event){
+    if(isPaused){
+        return;
+    }
     switch(event.keyCode){
         case 37 : //left arrow
             moveTetromino('left');
@@ -531,3 +517,9 @@ function handleKeyPress(event){
             break;
     }   
 }
+
+
+
+gameInterval = setInterval(() => moveTetromino('down'), 700);
+
+

@@ -1,3 +1,6 @@
+
+
+
 body{
     background: linear-gradient(0deg, #4acd69 0%, #30c4e5 100%);
     height: 100vh;
@@ -12,15 +15,6 @@ body{
 .logo{
     display: block;
     margin: 0 auto 20px;
-    
-}
-
-.playButton{
-    display:block;
-    margin-right: 0 auto 10px;
-    background-color:rgb(244, 80, 167);
-    font-size: 15px;
-    padding: 10px 15px;
     
 }
 
@@ -69,14 +63,5 @@ body{
     font-size: 15px;
     padding: 5px 10px;
 }
-
-.mute-button{
-    background-color:rgb(237, 238, 156);
-    font-size: 25px;
-    padding: 15px 30px;
-    cursor: pointer;
-
-}
-
 
 
