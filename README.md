@@ -32,7 +32,6 @@ The game board is a 10x20 grid, with each block sized at 24x24 pixels.
 The game styles are defined in style.css and ensure a visually pleasing experience with 
 a gradient background and neatly defined blocks with shadows for depth perception.
 
-[tetris-project.pdf](https://github.com/user-attachments/files/16258139/tetris-project.pdf)
-
+[tetris-project.pdf](https://github.com/user-attachments/files/16258153/tetris-project.pdf)
 
 ## Project Link: https://github.com/your-username/tetris-game
