@@ -24,7 +24,9 @@ Up Arrow: Rotate the tetromino.
 Spacebar: Drop the tetromino instantly to the bottom.
 
 ## Sound Controls
+
 Click the "BGM On" button to toggle background music on and off during the game.
+
 
 ## Game Design
 
@@ -34,4 +36,6 @@ a gradient background and neatly defined blocks with shadows for depth perceptio
 
 [tetris-project.pdf](https://github.com/user-attachments/files/16258153/tetris-project.pdf)
 
-## Project Link: https://github.com/your-username/tetris-game
+
+
+
